@@ -26,10 +26,18 @@ public class QueenBoard {
         return output.substring(0, output.length() - 1); //removes extra \n
     }
 
-    public boolean addQueen(int r, int c) { //REMEMBER PRIVATE
-
+    public boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
+        if (board[r][c] == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
-    public boolean removeQueen(int r, int c) { //REMEMBER PRIVATE
-
+    public boolean removeQueen(int r, int c) { //REMEMBER PRIVATE //this function removes queen only if it exists
+        if (board[r][c] == -1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
