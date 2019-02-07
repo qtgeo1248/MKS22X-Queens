@@ -21,8 +21,8 @@ public class QueenBoard {
                     output += "_ ";
                 }
             }
-            output += "\n";
+            output = output.substring(0, output.length()- 1) + "\n"; //removes extra space
         }
-        return output;
+        return output.substring(0, output.length() - 1); //removes extra \n
     }
 }
