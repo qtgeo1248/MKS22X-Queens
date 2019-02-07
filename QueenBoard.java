@@ -34,10 +34,13 @@ public class QueenBoard {
                     board[i][c]++;
                 }
             }
-            for (int i = 0; i < board[c].length; i++) { //adds everything in row
+            for (int i = 0; i < board[r].length; i++) { //adds everything in row
                 if (board[r][i] != -1) {
                     board[i][c]++;
                 }
+            }
+            for (int i = Math.abs(r - c); i + c < board[r].length && i + r < board.length; i++) {
+                
             }
             return true;
         } else {
