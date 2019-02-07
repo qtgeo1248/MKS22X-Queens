@@ -39,7 +39,7 @@ public class QueenBoard {
             }
             for (int i = 0; i < board[r].length; i++) { //adds everything in row
                 if (board[r][i] != -1) {
-                    board[i][c]++;
+                    board[r][i]++;
                 }
             }
             for (int i = Math.min(r, c); c - i < board[r].length && r - i < board.length ; i--) { //adds everything in top left to bottom right diagonal
