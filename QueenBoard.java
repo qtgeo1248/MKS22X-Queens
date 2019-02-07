@@ -41,7 +41,7 @@ public class QueenBoard {
                     board[i][c]++;
                 }
             }
-            for (int i = Math.min(r, c); i + c < board[r].length && i + r < board.length; i++) {
+            for (int i = Math.min(r, c); i + c < board[r].length && i + r < board.length; i--) { //adds everything in top left to bottom right diagonal
                 if (board[r - i][c - i] != -1) {
                     board[r - i][c - i]++;
                 }
