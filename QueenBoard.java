@@ -25,4 +25,11 @@ public class QueenBoard {
         }
         return output.substring(0, output.length() - 1); //removes extra \n
     }
+
+    public boolean addQueen(int r, int c) { //REMEMBER PRIVATE
+
+    }
+    public boolean removeQueen(int r, int c) { //REMEMBER PRIVATE
+
+    }
 }
