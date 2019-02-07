@@ -40,7 +40,9 @@ public class QueenBoard {
                 }
             }
             for (int i = Math.abs(r - c); i + c < board[r].length && i + r < board.length; i++) {
-                
+                if (board[r - i][c - i] != -1) {
+                    board[r - i][c - i]++;
+                }
             }
             return true;
         } else {
