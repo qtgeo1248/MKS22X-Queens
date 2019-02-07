@@ -17,6 +17,7 @@ public class QueenBoard {
             for (int j = 0; j < board[i].length; j++) {
 
             }
+            output += "\n";
         }
         return output;
     }
