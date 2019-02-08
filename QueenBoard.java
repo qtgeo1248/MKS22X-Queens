@@ -39,8 +39,9 @@ public class QueenBoard {
                     output += board[i][j] + " ";
                 }
             }
+            output = output.substring(0, output.length() - 1) + "\n"; //removes extra space
         }
-        return output;
+        return output.substring(0, output.length() - 1); //removes extra \n
     }
 
     public boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
