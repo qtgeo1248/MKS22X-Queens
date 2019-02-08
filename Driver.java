@@ -11,5 +11,9 @@ public class Driver {
         System.out.println(test + "\n");
         System.out.println(test.removeQueen(0, 3) + "\n");
         System.out.println(test + "\n");
+        System.out.println(test.removeQueen(3, 1));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(1, 0));
+        System.out.println(test);
     }
 }
