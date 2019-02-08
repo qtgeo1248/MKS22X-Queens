@@ -13,7 +13,7 @@ public class QueenBoard {
         }
     }
 
-    public String toString() {
+    public String toStringSupposedToBe() { //this is what's it supposed to be for the assignment
         String output = "";
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) { //puts in the chars
@@ -27,6 +27,11 @@ public class QueenBoard {
             output = output.substring(0, output.length()- 1) + "\n"; //removes extra space
         }
         return output.substring(0, output.length() - 1); //removes extra \n
+    }
+
+    public String toString() {
+        String output = "";
+        return output;
     }
 
     public boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
