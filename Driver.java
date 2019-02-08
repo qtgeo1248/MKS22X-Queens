@@ -7,5 +7,7 @@ public class Driver {
         System.out.println(test.addQueen(1, 1) + "\n");
         System.out.println(test.addQueen(3, 1));
         System.out.println(test + "\n");
+        System.out.println(test.addQueen(0, 3));
+        System.out.println(test + "\n");
     }
 }
