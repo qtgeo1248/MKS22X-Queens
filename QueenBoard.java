@@ -57,7 +57,7 @@ public class QueenBoard {
                     board[r + i][c + i]++;
                 }
             }
-            for (int i = 0; c + i < board[r].length && r - i >= 0; i++) {
+            for (int i = 0; c + i < board[r].length && r - i >= 0; i++) { //adds everything in bottom left to top right diagonal
                 if (board[r - i][c + i] != -1) {
                     board[r - i][c + i]++;
                 }
@@ -77,6 +77,11 @@ public class QueenBoard {
             for (int i = 0; c + i < board[r].length && r + i < board.length; i++) { //subtracts everything in top left to bottom right diagonal
                 if (board[r + i][c + i] != -1) {
                     board[r + i][c + i]--;
+                }
+            }
+            for (int i = 0; c + i < board[r].length && r - i >= 0; i++) { //subtracts everything in bottom left to top right diagonal
+                if (board[r - i][c + i] != -1) {
+                    board[r - i][c + i]--;
                 }
             }
             return true;
