@@ -57,7 +57,7 @@ public class QueenBoard {
                     board[r + i][c + i]++;
                 }
             }
-            for (int i = 0; c + i < board[r].length && r - i < board.length; i++) {
+            for (int i = 0; c + i < board[r].length && r - i >= 0; i++) {
                 if (board[r - i][c + i] != -1) {
                     board[r - i][c + i]++;
                 }
