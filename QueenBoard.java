@@ -29,11 +29,15 @@ public class QueenBoard {
         return output.substring(0, output.length() - 1); //removes extra \n
     }
 
-    public String toString() {
+    public String toString() { //this is only for debugging purposes
         String output = "";
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                
+                if (board[i][j] == -1) {
+                    output += "Q ";
+                } else {
+                    output += board[i][j] + " ";
+                }
             }
         }
         return output;
