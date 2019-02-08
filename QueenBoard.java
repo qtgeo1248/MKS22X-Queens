@@ -47,7 +47,7 @@ public class QueenBoard {
     public boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
         if (board[r][c] == 0) {
             board[r][c] = -1;
-            for (int i = 0; i < board[r].length; i++) { //adds everything in row
+            for (int i = c; i < board[r].length; i++) { //adds everything in row
                 if (board[r][i] != -1) {
                     board[r][i]++;
                 }
