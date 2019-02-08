@@ -52,13 +52,15 @@ public class QueenBoard {
                     board[r][i]++;
                 }
             }
-            for (int i = 0; i + c < board[r].length && i + r < board.length; i++) { //adds everything in top left to bottom right diagonal
+            for (int i = 0; c + i < board[r].length && r + i < board.length; i++) { //adds everything in top left to bottom right diagonal
                 if (board[r + i][c + i] != -1) {
                     board[r + i][c + i]++;
                 }
             }
-            for (int i = 0; i + c < board[r].length && i + r < board.length; i++) {
-
+            for (int i = 0; c + i < board[r].length && r - i < board.length; i++) {
+                if (board[r - i][c + i] != -1) {
+                    board[r - i][c + i]++;
+                }
             }
             return true;
         } else {
