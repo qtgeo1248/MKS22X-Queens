@@ -69,6 +69,11 @@ public class QueenBoard {
     }
     public boolean removeQueen(int r, int c) { //REMEMBER PRIVATE //this function removes queen only if it exists
         if (board[r][c] == -1) {
+            for (int i = c; i < board[r].length; i++) {
+                if (board[r][i] != -1) {
+                    board[r][i]--;
+                }
+            }
             return true;
         } else {
             return false;
