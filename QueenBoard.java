@@ -53,8 +53,8 @@ public class QueenBoard {
                 }
             }
             for (int i = 0; i + c < board[r].length && i + r < board.length; i++) { //adds everything in top left to bottom right diagonal
-                if (board[r - i][c - i] != -1) {
-                    board[r - i][c - i]++;
+                if (board[r + i][c + i] != -1) {
+                    board[r + i][c + i]++;
                 }
             }
             for (int i = 0; i + c < board[r].length && i + r < board.length; i++) {
