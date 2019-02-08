@@ -42,5 +42,7 @@ public class Driver {
         System.out.println(test + "\n");
         System.out.println(test.removeQueen(3, 5));
         System.out.println(test + "\n");
+
+        test = new QueenBoard(4);
     }
 }
