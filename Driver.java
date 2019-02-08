@@ -44,5 +44,11 @@ public class Driver {
         System.out.println(test + "\n");
 
         test = new QueenBoard(4);
+        test.addQueen(0, 0);
+        try {
+            test.solve();
+        } catch (IllegalStateException e) {
+            System.out.println("Exception Caught!\n");
+        }
     }
 }

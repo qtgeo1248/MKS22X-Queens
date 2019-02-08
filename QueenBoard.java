@@ -99,5 +99,6 @@ public class QueenBoard {
                 }
             }
         }
+        return true; //temp for now while testing
     }
 }
