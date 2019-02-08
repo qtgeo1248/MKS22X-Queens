@@ -84,6 +84,7 @@ public class QueenBoard {
                     board[r - i][c + i]--;
                 }
             }
+            board[r][c] = 0;
             return true;
         } else {
             return false;
