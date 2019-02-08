@@ -15,5 +15,32 @@ public class Driver {
         System.out.println(test + "\n");
         System.out.println(test.removeQueen(1, 0));
         System.out.println(test);
+
+        test = new QueenBoard(7);
+        System.out.println(test.addQueen(0, 0));
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(2, 1));
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(4, 2));
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(6, 3));
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(1, 4));
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(3, 5));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(1, 0) + "\n");
+        System.out.println(test.removeQueen(0, 0));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(2, 1));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(4, 2));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(6, 3));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(1, 4));
+        System.out.println(test + "\n");
+        System.out.println(test.removeQueen(3, 5));
+        System.out.println(test + "\n");
     }
 }
