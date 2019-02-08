@@ -3,6 +3,9 @@ public class Driver {
         QueenBoard test = new QueenBoard(4);
         System.out.println(test + "\n");
         System.out.println(test.addQueen(1, 0));
-        System.out.println(test);
+        System.out.println(test + "\n");
+        System.out.println(test.addQueen(1, 1));
+        System.out.println(test.addQueen(3, 1));
+        System.out.println(test + "\n");
     }
 }
