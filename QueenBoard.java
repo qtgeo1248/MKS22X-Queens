@@ -110,7 +110,7 @@ public class QueenBoard {
             for (int i = 0; i < board.length; i++) {
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
                     addQueen(i, c);
-                    isTrue = isTrue || solve(c + 1, i);
+                    isTrue = solve(c + 1, i) || isTrue;
                 }
             }
             if (isTrue) {
