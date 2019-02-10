@@ -99,20 +99,24 @@ public class QueenBoard {
                 }
             }
         }
-        return true; //temp for now while testing
+        return solve(0, 0); //temp for now while testing
     }
     private boolean solve(int c, int prevRow) {
         if (c == board[0].length) {
             return true;
         } else {
+            boolean isTrue = false;
             for (int i = 0; i < board.length; i++) {
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
                     addQueen(i, c);
-                    return solve(c + 1, i);
+                    isTrue = isTrue || solve(c + 1, i);
                 }
             }
-            removeQueen(prevRow, c - 1);
-            return false;
+            if (isTrue) {
+                return isTrue
+            } else {
+            
+            }
         }
     }
 }
