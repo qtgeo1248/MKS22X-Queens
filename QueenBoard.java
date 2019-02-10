@@ -111,7 +111,8 @@ public class QueenBoard {
                     return solve(c + 1, i);
                 }
             }
+            removeQueen(prevRow, c - 1);
+            return false;
         }
-        return true;
     }
 }
