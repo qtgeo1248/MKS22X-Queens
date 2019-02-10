@@ -99,9 +99,9 @@ public class QueenBoard {
                 }
             }
         }
-        return solve(0, 0); //temp for now while testing
+        return solveHelp(0, 0); //temp for now while testing
     }
-    private boolean solve(int c, int prevRow) {
+    private boolean solveHelp(int c, int prevRow) {
         if (c == board[0].length) {
             return true;
         } else {
@@ -109,7 +109,7 @@ public class QueenBoard {
             for (int i = 0; i < board.length; i++) {
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
                     addQueen(i, c);
-                    isTrue = solve(c + 1, i) || isTrue;
+                    isTrue = solveHelp(c + 1, i) || isTrue;
                 }
             }
             if (isTrue) {
