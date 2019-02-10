@@ -116,7 +116,7 @@ public class QueenBoard {
                 return isTrue;
             } else {
                 if (c != 0) {
-                    removeQueen(prevRow, c - 1);
+                    removeQueen(prevRow, c - 1); //this removes the previous queen so you can retry a different one
                 }
                 return false;
             }
@@ -131,5 +131,9 @@ public class QueenBoard {
                 }
             }
         }
+        return 0; //temp
+    }
+    private int countHelp(int c, int prevRow) {
+        return 0; //temp
     }
 }
