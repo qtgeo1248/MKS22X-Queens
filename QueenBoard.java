@@ -101,7 +101,7 @@ public class QueenBoard {
         }
         return true; //temp for now while testing
     }
-    private boolean solve(int c) {
-        
+    private boolean solve(int c, int prevRow) {
+        return true;
     }
 }
