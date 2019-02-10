@@ -102,6 +102,11 @@ public class QueenBoard {
         return true; //temp for now while testing
     }
     private boolean solve(int c, int prevRow) {
+        if (c == board[0].length) {
+            return true;
+        } else {
+
+        }
         return true;
     }
 }
