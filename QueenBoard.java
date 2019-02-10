@@ -105,7 +105,6 @@ public class QueenBoard {
         if (c == board[0].length) {
             return true;
         } else {
-            System.out.println(toString() + "\n");
             boolean isTrue = false;
             for (int i = 0; i < board.length; i++) {
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
