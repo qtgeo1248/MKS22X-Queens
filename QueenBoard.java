@@ -113,9 +113,12 @@ public class QueenBoard {
                 }
             }
             if (isTrue) {
-                return isTrue
+                return isTrue;
             } else {
-            
+                if (c != 0) {
+                    removeQueen(prevRow, c - 1);
+                }
+                return false;
             }
         }
     }
