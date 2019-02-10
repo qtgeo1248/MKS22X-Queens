@@ -122,4 +122,14 @@ public class QueenBoard {
             }
         }
     }
+
+    public int countSolutions() {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][j] != 0) {
+                    throw new IllegalStateException();
+                }
+            }
+        }
+    }
 }
