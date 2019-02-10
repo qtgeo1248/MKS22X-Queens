@@ -58,5 +58,13 @@ public class Driver {
         test = new QueenBoard(8);
         System.out.println(test.solve());
         System.out.println(test + "\n");
+
+        test = new QueenBoard(2);
+        System.out.println(test.solve());
+        System.out.println(test + "\n");
+        
+        test = new QueenBoard(3);
+        System.out.println(test.solve());
+        System.out.println(test + "\n");
     }
 }
