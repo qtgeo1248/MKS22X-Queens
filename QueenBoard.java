@@ -105,7 +105,12 @@ public class QueenBoard {
         if (c == board[0].length) {
             return true;
         } else {
-
+            for (int i = 0; i < board.length; i++) {
+                if (board[i][c] == 0) { //case when you find a spot to put a queen
+                    addQueen(i, c);
+                    return solve(c + 1, i);
+                }
+            }
         }
         return true;
     }
