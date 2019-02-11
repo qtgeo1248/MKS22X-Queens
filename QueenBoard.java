@@ -137,7 +137,13 @@ public class QueenBoard {
         if (c == board[0].length) {
             return 1;
         } else {
-            
+            int count = 0;
+            for (int i = 0; i < board.length; i++) {
+                if (board[i][c] == 0) {
+                    addQueen(i, c);
+                    count += solveHelp(c + 1, i);
+                }
+            }
         }
         return 0; //temp
     }
