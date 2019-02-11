@@ -51,28 +51,14 @@ public class Driver {
             System.out.println("Exception Caught!\n");
         }
 
-        test = new QueenBoard(4);
-        test.solve();
-        System.out.println(test + "\n");
+        for (int i = 0; i < 20; i++) {
+            test = new QueenBoard(i);
+            System.out.println(test.solve() + "\n" + test + "\n");
+        }
 
-        test = new QueenBoard(8);
-        System.out.println(test.solve());
-        System.out.println(test + "\n");
-
-        test = new QueenBoard(2);
-        System.out.println(test.solve());
-        System.out.println(test + "\n");
-
-        test = new QueenBoard(3);
-        System.out.println(test.solve());
-        System.out.println(test + "\n");
-
-        System.out.println(test.countSolutions() + "\n" + test + "\n");
-
-        test = new QueenBoard(2);
-        System.out.println(test.countSolutions() + "\n" + test + "\n");
-
-        test = new QueenBoard(4);
-        System.out.println(test.countSolutions() + "\n" + test + "\n");
+        for (int i = 0; i < 11; i++) {
+            test = new QueenBoard(i);
+            System.out.println(test.countSolutions() + "\n" + test + "\n");
+        }
     }
 }
