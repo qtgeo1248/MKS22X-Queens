@@ -99,6 +99,9 @@ public class QueenBoard {
                 }
             }
         }
+        if (board.length == 0) {
+            return true;
+        }
         return solveHelp(0, 0); //temp for now while testing
     }
     private boolean solveHelp(int c, int prevRow) {
@@ -130,6 +133,9 @@ public class QueenBoard {
                     throw new IllegalStateException();
                 }
             }
+        }
+        if (board.length == 0) {
+            return 1;
         }
         return countHelp(0, 0); //temp
     }

@@ -56,12 +56,12 @@ public class Driver {
             System.out.println("Exception Caught!\n");
         }
 
-        /*
+
         for (int i = 0; i < 20; i++) {
             test = new QueenBoard(i);
             System.out.println(test.solve() + "\n" + test + "\n");
         }
-
+/*
         for (int i = 0; i < 11; i++) {
             test = new QueenBoard(i);
             System.out.println(test.countSolutions() + "\n" + test + "\n");
