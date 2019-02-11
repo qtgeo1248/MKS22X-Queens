@@ -135,6 +135,7 @@ public class QueenBoard {
     }
     private int countHelp(int c, int prevRow) {
         if (c == board[0].length) {
+            removeQueen(c - 1, prevRow);
             return 1;
         } else {
             int count = 0;
