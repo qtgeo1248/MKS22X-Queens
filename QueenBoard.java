@@ -141,10 +141,15 @@ public class QueenBoard {
             for (int i = 0; i < board.length; i++) {
                 if (board[i][c] == 0) {
                     addQueen(i, c);
-                    count += solveHelp(c + 1, i);
+                    count += countHelp(c + 1, i);
                 }
             }
+            if (count == 0) {
+                if (c != 0) {
+                    removeQueen(prevRow, c - 1);
+                }
+            }
+            return count;
         }
-        return 0; //temp
     }
 }
