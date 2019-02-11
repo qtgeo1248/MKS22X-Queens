@@ -144,10 +144,8 @@ public class QueenBoard {
                     count += countHelp(c + 1, i);
                 }
             }
-            if (count == 0) {
-                if (c != 0) {
-                    removeQueen(prevRow, c - 1);
-                }
+            if (c != 0) {
+                removeQueen(prevRow, c - 1);
             }
             return count;
         }
