@@ -131,7 +131,7 @@ public class QueenBoard {
                 }
             }
         }
-        return 0; //temp
+        return countHelp(0, 0); //temp
     }
     private int countHelp(int c, int prevRow) {
         if (c == board[0].length) {
