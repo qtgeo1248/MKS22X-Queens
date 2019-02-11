@@ -50,7 +50,13 @@ public class Driver {
         } catch (IllegalStateException e) {
             System.out.println("Exception Caught!\n");
         }
+        try {
+            test.countSolutions();
+        } catch (IllegalStateException e) {
+            System.out.println("Exception Caught!\n");
+        }
 
+        /*
         for (int i = 0; i < 20; i++) {
             test = new QueenBoard(i);
             System.out.println(test.solve() + "\n" + test + "\n");
@@ -60,5 +66,6 @@ public class Driver {
             test = new QueenBoard(i);
             System.out.println(test.countSolutions() + "\n" + test + "\n");
         }
+        */
     }
 }
