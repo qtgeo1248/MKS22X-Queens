@@ -22,7 +22,6 @@ public class QueenBoard {
             for (int j = 0; j < board[i].length; j++) { //puts in the chars
                 if (board[i][j] == -1) { //-1 represents queen
                     output += "Q ";
-                    System.out.println("a");
                 } else {
                     output += "_ ";
                 }
