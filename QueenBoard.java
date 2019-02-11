@@ -15,6 +15,9 @@ public class QueenBoard {
 
     public String toStringSupposedToBe() { //this is what's it supposed to be for the assignment
         String output = "";
+        if (board.length == 0) {
+            return output;
+        }
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) { //puts in the chars
                 if (board[i][j] == -1) { //-1 represents queen
@@ -31,6 +34,9 @@ public class QueenBoard {
 
     public String toString() { //this is only for debugging purposes
         String output = "";
+        if (board.length == 0) {
+            return output;
+        }
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 if (board[i][j] == -1) {
