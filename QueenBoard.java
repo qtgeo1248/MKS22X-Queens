@@ -13,7 +13,7 @@ public class QueenBoard {
         }
     }
 
-    public String toStringSupposedToBe() { //this is what's it supposed to be for the assignment
+    public String toString() { //this is what's it supposed to be for the assignment
         String output = "";
         if (board.length == 0) {
             return output;
@@ -32,7 +32,7 @@ public class QueenBoard {
         return output.substring(0, output.length() - 1); //removes extra \n
     }
 
-    public String toString() { //this is only for debugging purposes
+    private String toStringDebug() { //this is only for debugging purposes
         String output = "";
         if (board.length == 0) {
             return output;
