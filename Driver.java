@@ -1,5 +1,6 @@
 public class Driver {
     public static void main(String[] args) {
+        /*
         QueenBoard test = new QueenBoard(4);
         System.out.println(test + "\n");
         System.out.println(test.addQueen(1, 0));
@@ -42,9 +43,10 @@ public class Driver {
         System.out.println(test + "\n");
         System.out.println(test.removeQueen(3, 5));
         System.out.println(test + "\n");
+        */
 
-        test = new QueenBoard(4);
-        test.addQueen(0, 0);
+        QueenBoard test = new QueenBoard(4);
+        test.solve();
         try {
             test.solve();
         } catch (IllegalStateException e) {
@@ -57,15 +59,15 @@ public class Driver {
         }
 
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             test = new QueenBoard(i);
             System.out.println(test.solve() + "\n" + test + "\n");
         }
-/*
-        for (int i = 0; i < 11; i++) {
+
+        for (int i = 0; i < 15; i++) {
             test = new QueenBoard(i);
-            System.out.println(test.countSolutions() + "\n" + test + "\n");
+            System.out.println(i + ": " + test.countSolutions());
         }
-        */
+        System.out.println(test);
     }
 }

@@ -49,7 +49,7 @@ public class QueenBoard {
         return output.substring(0, output.length() - 1); //removes extra \n
     }
 
-    public boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
+    private boolean addQueen(int r, int c) { //REMEMBER PRIVATE //this function adds a queen only if the space is zero
         if (board[r][c] == 0) {
             board[r][c] = -1;
             for (int i = c; i < board[r].length; i++) { //adds everything in row
@@ -72,7 +72,7 @@ public class QueenBoard {
             return false;
         }
     }
-    public boolean removeQueen(int r, int c) { //REMEMBER PRIVATE //this function removes queen only if it exists
+    private boolean removeQueen(int r, int c) { //REMEMBER PRIVATE //this function removes queen only if it exists
         if (board[r][c] == -1) {
             for (int i = c; i < board[r].length; i++) { //subtractrs everything in row
                 if (board[r][i] != -1) {
