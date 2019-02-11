@@ -102,7 +102,7 @@ public class QueenBoard {
         return solveHelp(0, 0); //temp for now while testing
     }
     private boolean solveHelp(int c, int prevRow) {
-        if (c == board[0].length) {
+        if (c == board[0].length) { //base case
             return true;
         } else {
             boolean isTrue = false;
@@ -134,6 +134,11 @@ public class QueenBoard {
         return 0; //temp
     }
     private int countHelp(int c, int prevRow) {
+        if (c == board[0].length) {
+            return 1;
+        } else {
+            
+        }
         return 0; //temp
     }
 }
