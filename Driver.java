@@ -62,9 +62,17 @@ public class Driver {
         test = new QueenBoard(2);
         System.out.println(test.solve());
         System.out.println(test + "\n");
-        
+
         test = new QueenBoard(3);
         System.out.println(test.solve());
         System.out.println(test + "\n");
+
+        System.out.println(test.countSolutions() + "\n" + test + "\n");
+
+        test = new QueenBoard(2);
+        System.out.println(test.countSolutions() + "\n" + test + "\n");
+
+        test = new QueenBoard(4);
+        System.out.println(test.countSolutions() + "\n" + test + "\n");
     }
 }
