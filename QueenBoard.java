@@ -1,6 +1,7 @@
 public class QueenBoard {
 
     private int[][] board;
+    private int countTotal = 0;
 
     public QueenBoard(int size) {
         board = new int[size][size];
@@ -109,24 +110,33 @@ public class QueenBoard {
     }
     private boolean solveHelp(int c, int prevRow) {
         if (c == board[0].length) { //base case
+            System.out.println(Text.go(1,1));
+            System.out.println(toString());
+            Text.wait(10);
             return true;
         } else {
             boolean isTrue = false;
             for (int i = 0; i < board.length; i++) {
                 System.out.println(Text.go(1,1));
-                System.out.println(this);
-                Text.wait(50); 
+                System.out.println(toString());
+                Text.wait(50);
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
                     addQueen(i, c);
                     isTrue = solveHelp(c + 1, i) || isTrue;
                 }
             }
+            System.out.println(Text.go(1,1));
+            System.out.println(toString());
+            Text.wait(10);
             if (isTrue) {
                 return isTrue;
             } else {
                 if (c != 0) {
                     removeQueen(prevRow, c - 1); //this removes the previous queen so you can retry a different one
                 }
+                System.out.println(Text.go(1,1));
+                System.out.println(toString());
+                Text.wait(10);
                 return false;
             }
         }
@@ -143,23 +153,39 @@ public class QueenBoard {
         if (board.length == 0) {
             return 1;
         }
-        return countHelp(0, 0); //temp
+        int ans = countHelp(0, 0);
+        countTotal = 0;
+        return ans;
     }
     private int countHelp(int c, int prevRow) {
         if (c == board[0].length) {
+            System.out.println(Text.go(1,1));
+            System.out.println(toString());
+            Text.wait(250);
             removeQueen(prevRow, c - 1);
+            countTotal++;
             return 1;
         } else {
             int count = 0;
             for (int i = 0; i < board.length; i++) {
+                System.out.println(Text.go(1,1));
+                System.out.println(toString());
+                Text.wait(50);
                 if (board[i][c] == 0) {
                     addQueen(i, c);
                     count += countHelp(c + 1, i);
                 }
             }
+            System.out.println(Text.go(1,1));
+            System.out.println(toString());
+            Text.wait(10);
             if (c != 0) {
                 removeQueen(prevRow, c - 1);
             }
+            System.out.println(Text.go(1,1));
+            System.out.println(toString());
+            System.out.println(countTotal);
+            Text.wait(100);
             return count;
         }
     }

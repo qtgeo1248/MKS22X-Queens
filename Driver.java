@@ -72,7 +72,9 @@ public class Driver {
         System.out.println(test);
         */
 
-        test = new QueenBoard(8);
-        System.out.println(test.solve());
+        //test = new QueenBoard(8);
+        //System.out.println(test.solve());
+        test = new QueenBoard(7);
+        test.countSolutions();
     }
 }
