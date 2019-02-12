@@ -113,6 +113,9 @@ public class QueenBoard {
         } else {
             boolean isTrue = false;
             for (int i = 0; i < board.length; i++) {
+                System.out.println(Text.go(1,1));
+                System.out.println(this);
+                Text.wait(50); 
                 if (board[i][c] == 0) { //case when you find a spot to put a queen
                     addQueen(i, c);
                     isTrue = solveHelp(c + 1, i) || isTrue;
