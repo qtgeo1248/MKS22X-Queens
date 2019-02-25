@@ -1,4 +1,5 @@
 public class KDriver {
+    //testcase must be a valid index of your input/output array
     public static void runTest(int i) {
         QueenBoard b;
         int[] tests = {1, 2, 3, 4, 5, 8};
